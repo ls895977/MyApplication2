@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="title_background">#ff4c94</color>
+    <color name="shouye_xuanze">#f6f6f6</color>
+    <color name="home_listvew_background">#ffffff</color>
+    <color name="home_image_textclor">#c5c5c5</color>
+    <color name="home_gridview_image_text">#ff0f70</color>
+    <color name="new_listivew_child_height_image_color">#c0c0c0</color>
+      <color name="new_listivew_child_height_image_color1">#0000ff</color>
+        <color name="new_listivew_child_height_image_color_text2">#ff0f70</color>
+        <color name="mybaby_sign_button">#ffffff</color>
+        <color name="mybaby_member_button_text_color">#ffffff</color>
+        <color name="line">#112b2b2b</color>
+    <color name="transparent">#00000000</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="title_back">#393a3f</color>
+    <color name="color_selected">#FF4081</color>
+    <color name="color_unselected">#393a3f</color>
+
+    <color name="all_item0">#f62e84</color>
+    <color name="all_item2">#f7579d</color>
+    <color name="all_item3">#f87fb4</color>
+</resources>

@@ -1,0 +1,73 @@
+apply plugin: 'com.android.application'
+apply plugin: 'me.tatarka.retrolambda'
+apply plugin: 'org.greenrobot.greendao'
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'org.greenrobot:greendao-gradle-plugin:3.2.1'
+    }
+}
+android {
+    compileSdkVersion 24
+    buildToolsVersion "25.0.0"
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    defaultConfig {
+        applicationId "com.lykj.mipinduobao"
+        minSdkVersion 16
+        targetSdkVersion 24
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    signingConfigs{
+        release{
+            storeFile file("E:\\Android_Project\\MyApplication2\\mipinduobao\\key\\mydebug.jks")
+            storePassword "android"
+            keyAlias "androidkey"
+            keyPassword "android"
+        }
+    }
+    buildTypes {
+        debug {
+            signingConfig signingConfigs.release
+        }
+        release {
+            signingConfig signingConfigs.release
+        }
+    }
+    useLibrary 'org.apache.http.legacy'
+}
+
+greendao {
+    /**
+     * 版本号
+     */
+    schemaVersion 1
+    /**
+     * greendao输出dao的数据库操作实体类文件夹（相对路径 包名+自定义路径名称，包将创建于包名的直接路径下）
+     */
+    daoPackage 'com.lykj.mipinduobao'
+    /**
+     * greenDao实体类包文件夹
+     */
+    targetGenDir 'src/main/java'
+}
+dependencies {
+    compile fileTree(include: '*.jar', dir: 'libs')
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.yanzhenjie.nohttp:okhttp:1.1.0'
+    compile project(':aextreme')
+    compile 'org.greenrobot:greendao:3.2.0'
+    compile 'com.android.volley:volley:1.0.0'
+    compile 'com.google.code.gson:gson:2.8.0'
+    compile 'com.tencent.mm.opensdk:wechat-sdk-android-with-mta:1.0.2'
+
+}

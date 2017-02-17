@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f4f4f4"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:text="选择平台充值"
+            android:textColor="#666666" />
+
+        <TextView
+            android:id="@+id/recharge_chongzhi_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10.00"
+            android:textColor="#ff6b00" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="元"
+            android:textColor="#666666" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#b8b8b8" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/recharge_chongzhi_10"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/b11"
+            android:gravity="center"
+            android:text="10元"
+            android:textColor="#656565" />
+
+        <TextView
+            android:id="@+id/recharge_chongzhi_20"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/image22"
+            android:gravity="center"
+            android:text="20元"
+            android:textColor="#656565" />
+
+        <TextView
+            android:id="@+id/recharge_chongzhi_30"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:background="@drawable/image22"
+            android:gravity="center"
+            android:text="30元"
+            android:textColor="#656565" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <TextView
+            android:id="@+id/recharge_chongzhi_100"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/image22"
+            android:gravity="center"
+            android:text="100元"
+            android:textColor="#656565" />
+
+        <TextView
+            android:id="@+id/recharge_chongzhi_200"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/image22"
+            android:gravity="center"
+            android:text="200元"
+            android:textColor="#656565" />
+
+        <EditText
+            android:id="@+id/recharge_chongzhi_shuru"
+            style="@null"
+            android:numeric="integer"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:background="@drawable/image22"
+            android:gravity="center"
+            android:hint="输入金额"
+            android:singleLine="true"
+            android:textColor="#656565" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/b11"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:text="选择平台充值"
+                android:textColor="#666666" />
+
+            <TextView
+                android:id="@+id/recharge_chongzhi_text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10.00"
+                android:textColor="#ff6b00" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="元"
+                android:textColor="#666666" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#f4f4f4" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp" >
+
+            <RadioButton
+                android:id="@+id/wx_chose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="微信支付"
+                android:clickable="false"
+                android:checked="true"
+                android:textColor="#666666" />
+
+            <TextView
+                android:id="@+id/recharge_chongzhi_text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10.00"
+                android:textColor="#ff6b00" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="元"
+                android:textColor="#666666" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <Button
+            android:id="@+id/butt1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/recharge_background_button"
+            android:text="确认充值"
+            android:textColor="#fff" />
+
+        <Button
+            android:id="@+id/butt2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/recharge_background_button"
+            android:text="我有充值卡"
+            android:textColor="#fff" />
+    </LinearLayout>
+
+</LinearLayout>

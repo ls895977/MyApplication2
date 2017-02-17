@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home_listvew_background"
+    android:orientation="vertical" >
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@color/shouye_xuanze"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/home_zuixin_jiexiao_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/home_zuixinjixiao_toandbumme"
+                android:text="@string/homelistview_zuixinjiexiao"
+                android:textSize="@dimen/home_image_textsize" />
+
+            <ImageView
+                android:id="@+id/listview_zuixin_imagebutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="@dimen/home_zuixinjixiao_toandbumme"
+                android:src="@drawable/genduo" />
+        </RelativeLayout>
+        <!-- 此处显示最新揭晓内容 -->
+
+        <!--<GridView-->
+            <!--android:id="@+id/home_list_gridview1"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="#fff"-->
+            <!--android:numColumns="3"-->
+            <!--android:padding="10dp" >-->
+        <!--</GridView>-->
+    </LinearLayout>
+
+    <!-- 抢购区按钮处 -->
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/home_listview_qianggou_paddingBottom"
+        android:paddingLeft="@dimen/home_listview_qinagou_paddingLeft"
+        android:paddingRight="@dimen/home_listview_qinagou_paddingLeft" >
+
+        <RelativeLayout
+            android:id="@+id/home_lsit_qianggou1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/home_listview_0"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/home_listview_qianggou_iamgesize"
+                android:src="@drawable/image0" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/home_listview_0"
+                android:layout_centerHorizontal="true"
+                android:text="@string/homelistview_jiexiaoimage_text1"
+                android:textColor="#666666"
+                android:textSize="@dimen/home_image_textsize" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/home_lsit_qianggou2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/home_listview_10"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/home_listview_qianggou_iamgesize"
+                android:src="@drawable/image10" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/home_listview_10"
+                android:layout_centerHorizontal="true"
+                android:text="@string/homelistview_jiexiaoimage_text2"
+                android:textColor="#666666"
+                android:textSize="@dimen/home_image_textsize" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/home_lsit_qianggou3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/home_listview_100"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/home_listview_qianggou_iamgesize"
+                android:src="@drawable/image100" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/home_listview_100"
+                android:layout_centerHorizontal="true"
+                android:text="@string/homelistview_jiexiaoimage_text3"
+                android:textColor="#666666"
+                android:textSize="@dimen/home_image_textsize" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/home_lsit_qianggou4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/home_listview_xian"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/home_listview_qianggou_iamgesize"
+                android:src="@drawable/xianshi" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/home_listview_xian"
+                android:layout_centerHorizontal="true"
+                android:text="@string/homelistview_jiexiaoimage_text4"
+                android:textColor="#666666"
+                android:textSize="@dimen/home_image_textsize" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!-- 选择排序区 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/shouye_xuanze"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/home_chose_paddingLeft"
+        android:paddingRight="@dimen/home_chose_paddingRight"
+        android:paddingTop="@dimen/title_paddingTop" >
+
+        <!-- 最热 -->
+
+        <LinearLayout
+            android:id="@+id/home_listviev_daohang_layout1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/home_listviev_daohang_text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="@string/homelistview_chose_text1"
+                    android:textColor="#666666" />
+
+                <ImageView
+                    android:id="@+id/home_listview_image1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/home_listview_image_height1"
+                    android:layout_marginTop="@dimen/home_listview_paixu_left" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/home_listviev_daohang_img1"
+                android:layout_width="@dimen/home_zuire_imagesize"
+                android:layout_height="@dimen/home_zuire_imagesize"
+                  android:layout_marginBottom="@dimen/home_listview_mading_button"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/home_listview_paixu_left" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/home_listviev_daohang_layout2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+                <TextView
+                    android:id="@+id/home_listviev_daohang_text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="@string/homelistview_chose_text2"
+                    android:textColor="#666666" />
+
+                <ImageView
+                    android:id="@+id/home_listview_image2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/home_listview_image_height1"
+                    android:layout_marginTop="@dimen/home_listview_paixu_left" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/home_listviev_daohang_img2"
+                android:layout_width="@dimen/home_zuire_imagesize"
+                android:layout_height="@dimen/home_zuire_imagesize"
+                android:layout_marginLeft="@dimen/home_listview_paixu_left" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/home_listviev_daohang_layout3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/home_listviev_daohang_text3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="@string/homelistview_chose_text3"
+                    android:textColor="#666666" />
+
+                <ImageView
+                    android:id="@+id/home_listview_image3"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/home_listview_image_height1"
+                    android:layout_marginTop="@dimen/home_listview_paixu_left" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/home_listviev_daohang_img3"
+                android:layout_width="@dimen/home_zuire_imagesize"
+                android:layout_height="@dimen/home_zuire_imagesize"
+                android:layout_marginLeft="@dimen/home_listview_paixu_left" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/home_listviev_daohang_layout4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/home_listviev_daohang_text4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="@string/homelistview_chose_text4"
+                    android:textColor="#666666" />
+
+                <ImageView
+                    android:id="@+id/home_listview_image4"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/home_listview_image_height1"
+                    android:layout_marginTop="@dimen/home_listview_paixu_left" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/home_listviev_daohang_img4"
+                android:layout_width="@dimen/home_zuire_imagesize"
+                android:layout_height="@dimen/home_zuire_imagesize"
+                android:layout_marginLeft="@dimen/home_listview_paixu_left" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.mpdb.view.GridView_listview
+        android:id="@+id/home_listview_gridview_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="2" >
+    </com.mpdb.view.GridView_listview>
+
+</LinearLayout>

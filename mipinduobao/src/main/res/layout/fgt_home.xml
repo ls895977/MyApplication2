@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lykj.aextreme.afinal.pulltorefresh.PullToRefreshScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/home_scrollview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/title" />
+
+        <ImageView
+            android:id="@+id/homelistview_item1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/home_listview_image_height"
+            android:background="#c0c0c0"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:id="@+id/hoame_relat_image1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_weight="1"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/jijiang"
+                android:gravity="center"
+                android:text="@string/homelistview_wenzi1"
+                android:textColor="#666666"
+                android:textSize="@dimen/home_image_textsize" />
+
+            <TextView
+                android:id="@+id/hoame_relat_image2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/home_listview_imge2"
+                android:layout_centerHorizontal="true"
+                android:layout_weight="1"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/zuixin"
+                android:gravity="center"
+                android:text="@string/homelistview_wenzi2"
+                android:textColor="#666666"
+                android:textSize="@dimen/home_image_textsize" />
+
+            <TextView
+                android:id="@+id/hoame_relat_image3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/home_listview_imge3"
+                android:layout_centerHorizontal="true"
+                android:layout_weight="1"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/duobaojilv"
+                android:gravity="center"
+                android:text="@string/homelistview_wenzi3"
+                android:textColor="#666666"
+                android:textSize="@dimen/home_image_textsize" />
+
+            <TextView
+                android:id="@+id/hoame_relat_image4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/home_listview_imge4"
+                android:layout_centerHorizontal="true"
+                android:layout_weight="1"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/zhanghu"
+                android:gravity="center"
+                android:text="@string/homelistview_wenzi4"
+                android:textColor="#666666"
+                android:textSize="@dimen/home_image_textsize" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/home_zuixin_jiexiao_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/genduo"
+            android:padding="@dimen/home_zuixinjixiao_toandbumme"
+            android:text="@string/homelistview_zuixinjiexiao"
+            android:textSize="@dimen/home_image_textsize" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            android:background="@color/white"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:id="@+id/home_list_horizontall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" />
+        </HorizontalScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginTop="2dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/home_lsit_qianggou1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                android:drawableTop="@drawable/image0"
+                android:gravity="center"
+                android:text="@string/homelistview_jiexiaoimage_text1"
+                android:textColor="#666666"
+                android:textSize="@dimen/home_image_textsize" />
+
+            <TextView
+                android:id="@+id/home_lsit_qianggou2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/image10"
+                android:gravity="center"
+                android:text="@string/homelistview_jiexiaoimage_text2"
+                android:textColor="#666666"
+                android:textSize="@dimen/home_image_textsize" />
+
+            <TextView
+                android:id="@+id/home_lsit_qianggou3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/image100"
+                android:gravity="center"
+                android:text="@string/homelistview_jiexiaoimage_text3"
+                android:textColor="#666666"
+                android:textSize="@dimen/home_image_textsize" />
+
+            <TextView
+                android:id="@+id/home_lsit_qianggou4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/xianshi"
+                android:gravity="center"
+                android:text="@string/homelistview_jiexiaoimage_text4"
+                android:textColor="#666666"
+                android:textSize="@dimen/home_image_textsize" />
+        </LinearLayout>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="match_parent"
+            android:clickable="true"
+            android:layout_height="wrap_content"
+            app:tabIndicatorColor="@color/color_selected" />
+
+        <com.lykj.mipinduobao.view.MyViewPager
+            android:id="@+id/info_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="false" />
+    </LinearLayout>
+</com.lykj.aextreme.afinal.pulltorefresh.PullToRefreshScrollView>

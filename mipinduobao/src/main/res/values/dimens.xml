@@ -1,0 +1,55 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="layout_title_imagesize">20dp</dimen>
+    <dimen name="layout_title_pading">5dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="title_paddingTop">10dp</dimen>
+    <dimen name="home_image_pading">10dp</dimen>
+    <dimen name="home_image_textsize">14sp</dimen>
+    <dimen name="home_zuixinjixiao_toandbumme">10dp</dimen>
+    <dimen name="home_kongbai_height">30dp</dimen>
+    <dimen name="home_listview_paixu_left">5dp</dimen>
+    <dimen name="home_listview_mading_button">5dp</dimen>
+    <dimen name="home_listview_qianggou_iamgesize">70dp</dimen>
+    <dimen name="home_chose_paddingLeft">30dp</dimen>
+    <dimen name="home_chose_paddingRight">20dp</dimen>
+    <dimen name="home_zuire_imagesize">25dp</dimen>
+    <dimen name="home_listview_qinagou_paddingLeft">20dp</dimen>
+    <dimen name="home_listview_qianggou_paddingBottom">10dp</dimen>
+    <dimen name="home_listview_image_height">169dp</dimen>
+    <dimen name="news_listview_pading">10dp</dimen>
+    <dimen name="hoe_gridview.texttop">10dp</dimen>
+    <dimen name="new_litview_child_pading">10dp</dimen>
+    <dimen name="new_listivew_child_height_image">1dp</dimen>
+    <dimen name="mybabay_linerlayout_top">10dp</dimen>
+    <dimen name="mybabay_linerlayout_top1">2dp</dimen>
+    <dimen name="mybabay_linerlayout_top2">20dp</dimen>
+    <dimen name="my_baby_imagebuttonQQ_width">40dp</dimen>
+    <dimen name="my_baby_imagebuttonQQ_height">40dp</dimen>
+    <dimen name="my_baby_text_size">16sp</dimen>
+    <dimen name="my_baby_item_textsize">5dp</dimen>
+    <dimen name="mybaby_member_text_size">20sp</dimen>
+    <dimen name="mybaby_member_text_size_height">40sp</dimen>
+    <dimen name="mybaby_member_layout_pading">10dp</dimen>
+    <dimen name="mybaby_member_image_heightandwidth">100dp</dimen>
+    <dimen name="mybaby_member_image_pding">10dp</dimen>
+    <dimen name="mybaby_member_image_widthandheight">50dp</dimen>
+    <dimen name="mybaby_allshopin_expand_item_hegith">5dp</dimen>
+    <dimen name="mybaby_allshopin_expand_item_textsize">16sp</dimen>
+<dimen name="home_listview_image_height1">2dp</dimen>
+    <dimen name="dp_0.1">0.1dp</dimen>
+    <dimen name="dp_0.5">0.5dp</dimen>
+    <dimen name="dp_1">1dp</dimen>
+    <dimen name="dp_2">2dp</dimen>
+    <dimen name="dp_5">5dp</dimen>
+    <dimen name="dp_10">10dp</dimen>
+    <dimen name="dp_15">15dp</dimen>
+    <dimen name="dp_20">20dp</dimen>
+    <dimen name="dp_30">30dp</dimen>
+    <dimen name="dp_40">40dp</dimen>
+    <dimen name="dp_48">48dp</dimen>
+    <dimen name="dp_50">50dp</dimen>
+    <dimen name="dp_60">60dp</dimen>
+</resources>

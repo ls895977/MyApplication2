@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bei_jing">
+
+    <TextView
+        android:id="@+id/my_baby_sign_fanhui"
+        android:layout_width="@dimen/mybaby_member_image_widthandheight"
+        android:layout_height="@dimen/mybaby_member_image_widthandheight"
+        android:paddingTop="@dimen/dp_15"
+        android:paddingLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:textSize="@dimen/font_size_16sp"
+        android:text="返回"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/white"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:paddingBottom="80dp"
+        android:paddingTop="@dimen/mybabay_linerlayout_top2">
+
+        <TextView
+            android:id="@+id/sign_FindPassWord"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingRight="@dimen/mybabay_linerlayout_top2"
+            android:text="@string/mybaby_sign_findpassword_text"
+            android:textColor="@color/mybaby_member_button_text_color" />
+
+        <ImageView
+            android:id="@+id/sing_QQ"
+            android:layout_width="@dimen/my_baby_imagebuttonQQ_width"
+            android:layout_height="@dimen/my_baby_imagebuttonQQ_height"
+            android:layout_marginRight="@dimen/mybabay_linerlayout_top2"
+            android:src="@drawable/iconfont_qq_copy" />
+
+        <ImageView
+            android:id="@+id/sign_WX"
+            android:layout_width="@dimen/my_baby_imagebuttonQQ_width"
+            android:layout_height="@dimen/my_baby_imagebuttonQQ_height"
+            android:src="@drawable/iconfont_weixin" />
+
+        <TextView
+            android:id="@+id/sign_Register"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/mybabay_linerlayout_top2"
+            android:text="@string/mybaby_sign_register"
+            android:textColor="@color/mybaby_member_button_text_color" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_60"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="@dimen/mybaby_member_image_heightandwidth"
+            android:layout_height="@dimen/mybaby_member_image_heightandwidth"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="40dp"
+            android:src="@drawable/logo" />
+
+        <LinearLayout
+            android:id="@+id/my_baby_register_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/mybaby_member_layout_pading">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/mybabay_linerlayout_top">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mybaby_register_text1"
+                    android:textColor="@color/mybaby_member_button_text_color" />
+
+                <EditText
+                    android:id="@+id/sign_account"
+                    style="?android:attr/textViewStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="请输入电话号码"
+                    android:inputType="number"
+                    android:paddingLeft="@dimen/mybabay_linerlayout_top"
+                    android:singleLine="true"
+                    android:textColor="@color/mybaby_member_button_text_color"
+                    android:textColorHint="#80ffffff" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/xian" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/mybabay_linerlayout_top">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/mybaby_sign_text"
+                    android:textColor="@color/mybaby_member_button_text_color" />
+
+                <EditText
+                    android:id="@+id/sign_password"
+                    style="?android:attr/textViewStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:background="@null"
+                    android:paddingLeft="@dimen/mybabay_linerlayout_top"
+                    android:password="true"
+                    android:singleLine="true"
+                    android:textColorHint="#80ffffff"
+                    android:hint="请输入密码"
+                    android:textColor="@color/mybaby_member_button_text_color" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/xian" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/my_baby_register_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/mybabay_linerlayout_top1"
+            android:paddingRight="@dimen/mybabay_linerlayout_top1"
+            android:paddingTop="@dimen/mybabay_linerlayout_top2">
+
+            <Button
+                android:id="@+id/sign_submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/mybaby_sign_button"
+                android:gravity="center"
+                android:text="@string/mybaby_sign_button_text_1"
+                android:textColor="@color/mybaby_sign_button" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

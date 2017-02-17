@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title" />
+
+    <com.mpdb.view.MyListView
+        android:id="@+id/newadapter_newchild"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="#c0c0c0"
+        android:dividerHeight="1dp" >
+    </com.mpdb.view.MyListView>
+
+    <Button
+        android:id="@+id/news_layout_text"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#f4f4f4"
+        android:textColor="#999899"
+        android:clickable="false"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:padding="10dp"
+        android:text="@string/news_layout_text1" />
+
+</LinearLayout>

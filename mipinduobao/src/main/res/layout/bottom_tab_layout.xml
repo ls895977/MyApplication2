@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <com.lykj.mipinduobao.view.BadgeView
+        android:id="@+id/shoping_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="90dip"
+        android:layout_marginTop="2dip"
+        android:textSize="12sp"
+        android:text="0" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/activity_main_baground"
+        android:orientation="horizontal"
+        android:padding="3dp">
+
+        <TextView
+            android:id="@+id/tab_home"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/home_selector"
+            android:gravity="center"
+            android:text="首页"
+            android:textColor="@drawable/main_tvcolor" />
+
+        <TextView
+            android:id="@+id/tab_all"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/all_products_selector"
+            android:gravity="center"
+            android:text="所有商品"
+            android:textColor="@drawable/main_tvcolor"/>
+
+        <TextView
+            android:id="@+id/tab_news"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/news_selector"
+            android:gravity="center"
+            android:text="最新揭晓"
+            android:textColor="@drawable/main_tvcolor" />
+
+        <TextView
+            android:id="@+id/tab_shop_cart"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/shop_cart_selector"
+            android:gravity="center"
+            android:text="购物车"
+            android:textColor="@drawable/main_tvcolor"/>
+
+        <TextView
+            android:id="@+id/tab_my_baby"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/my_baby_selector"
+            android:gravity="center"
+            android:text="我的夺宝"
+            android:textColor="@drawable/main_tvcolor" />
+    </LinearLayout>
+</RelativeLayout>

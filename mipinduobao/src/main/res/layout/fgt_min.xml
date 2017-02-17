@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.lykj.aextreme.afinal.pulltorefresh.PullToRefreshScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/min_upUser"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/dp_20">
+
+        <include layout="@layout/title" />
+
+        <LinearLayout
+            android:id="@+id/mybaby_layout_title_height"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/dp_10">
+
+            <LinearLayout
+                android:id="@+id/mybaby_member_layout"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_marginRight="1dp"
+                android:layout_weight="1.8"
+                android:background="@drawable/mybaby_member_fillet"
+                android:padding="@dimen/dp_10">
+
+                <ImageView
+                    android:id="@+id/mybaby_member_image"
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    android:background="@drawable/tou_1802x" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/mybaby_member_fillet1">
+
+                    <TextView
+                        android:id="@+id/mybaby_member_pager_tv1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="10dp"
+                        android:text="" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/mybaby_member_duobaobi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="10dp"
+                        android:text="可用夺宝币" />
+
+                    <TextView
+                        android:id="@+id/mybaby_member_duobaob_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/mybaby_member_duobaobi"
+                        android:paddingLeft="5dp"
+                        android:textColor="#f00" />
+
+                    <TextView
+                        android:id="@+id/mybaby_member_doubao_jinyan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/mybaby_member_duobaob_number"
+                        android:paddingLeft="@dimen/dp_20"
+                        android:text="经验：" />
+
+                    <TextView
+                        android:id="@+id/mybaby_member_doubao_jinyan_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/mybaby_member_doubao_jinyan"
+                        android:textColor="#f00" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_weight="1.2"
+                    android:background="@drawable/mybaby_member_fillet2"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/mybaby_member_duobaobiyue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="10dp"
+                        android:text="余额" />
+
+                    <TextView
+                        android:id="@+id/mybaby_member_duobaob_number_yue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/mybaby_member_duobaobiyue" />
+
+                    <TextView
+                        android:id="@+id/mybaby_member_chongzhi"
+                        android:layout_width="@dimen/dp_50"
+                        android:layout_height="@dimen/dp_20"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/dp_10"
+                        android:background="@drawable/chong_zhi2x"
+                        android:gravity="center"
+                        android:text="去充值"
+                        android:textSize="10sp" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:background="@drawable/mybaby_member_fillet"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/member_item1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_2"
+                android:layout_marginRight="@dimen/dp_5"
+                android:background="@color/white"
+                android:drawableRight="@drawable/jian_tou2x"
+                android:padding="@dimen/dp_10"
+                android:text="任务中心" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:background="@color/shouye_xuanze" />
+
+            <TextView
+                android:id="@+id/member_item2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_2"
+                android:layout_marginRight="@dimen/dp_5"
+                android:background="@color/white"
+                android:drawableRight="@drawable/jian_tou2x"
+                android:padding="@dimen/dp_10"
+                android:text="充值转盘" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:background="@color/shouye_xuanze" />
+
+            <TextView
+                android:id="@+id/member_item3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_2"
+                android:layout_marginRight="@dimen/dp_5"
+                android:background="@color/white"
+                android:drawableRight="@drawable/jian_tou2x"
+                android:padding="@dimen/dp_10"
+                android:text="我的晒单" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:background="@color/shouye_xuanze" />
+
+            <TextView
+                android:id="@+id/member_item4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_2"
+                android:layout_marginRight="@dimen/dp_5"
+                android:layout_marginTop="@dimen/dp_0.5"
+                android:background="@color/white"
+                android:drawableRight="@drawable/jian_tou2x"
+                android:padding="@dimen/dp_10"
+                android:text="邀请管理" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:background="@color/shouye_xuanze" />
+
+            <TextView
+                android:id="@+id/member_item5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_2"
+                android:layout_marginRight="@dimen/dp_5"
+                android:layout_marginTop="@dimen/dp_0.5"
+                android:background="@color/white"
+                android:drawableRight="@drawable/jian_tou2x"
+                android:padding="@dimen/dp_10"
+                android:text="我的名品记录" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:background="@color/shouye_xuanze" />
+
+            <TextView
+                android:id="@+id/member_item6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_2"
+                android:layout_marginRight="@dimen/dp_5"
+                android:layout_marginTop="@dimen/dp_0.5"
+                android:background="@color/white"
+                android:drawableRight="@drawable/jian_tou2x"
+                android:padding="@dimen/dp_10"
+                android:text="我的收货地址" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:background="@color/shouye_xuanze" />
+
+            <TextView
+                android:id="@+id/member_item7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_2"
+                android:layout_marginRight="@dimen/dp_5"
+                android:layout_marginTop="@dimen/dp_0.5"
+                android:background="@color/white"
+                android:drawableRight="@drawable/jian_tou2x"
+                android:padding="@dimen/dp_10"
+                android:text="获得的商品" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:background="@color/shouye_xuanze" />
+
+            <TextView
+                android:id="@+id/member_item8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_2"
+                android:layout_marginRight="@dimen/dp_5"
+                android:layout_marginTop="@dimen/dp_0.5"
+                android:background="@color/white"
+                android:drawableRight="@drawable/jian_tou2x"
+                android:padding="@dimen/dp_10"
+                android:text="账户明细" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:background="@color/shouye_xuanze" />
+
+            <TextView
+                android:id="@+id/member_item9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_2"
+                android:layout_marginRight="@dimen/dp_5"
+                android:layout_marginTop="@dimen/dp_0.5"
+                android:background="@color/white"
+                android:drawableRight="@drawable/jian_tou2x"
+                android:padding="@dimen/dp_10"
+                android:text="修改密码" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/mybaby_member_listview_button"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_30"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_15"
+            android:background="@drawable/mybaby_member_button"
+            android:text="@string/mybaby_member_button_text"
+            android:textColor="@color/mybaby_member_button_text_color" />
+    </LinearLayout>
+</com.lykj.aextreme.afinal.pulltorefresh.PullToRefreshScrollView>

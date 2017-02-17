@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gv"
+    android:descendantFocusability="blocksDescendants" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true"
+        android:background="@drawable/bg_gv"
+        android:padding="2.0dip" >
+
+        <ImageView
+            android:id="@+id/detail_img"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="4dp"
+            android:src="@drawable/defalut_product_png" />
+
+        <TextView
+            android:id="@+id/detail_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/detail_img"
+            android:singleLine="true"
+            android:text="(第1期)什么乱取吧咖啡加莱卡家乐"
+            android:textSize="14sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/detail_info"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp" >
+
+            <TextView
+                android:id="@+id/all_need"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="总需:10"
+                android:textColor="#8000"
+                android:textSize="8sp" />
+
+            <ProgressBar
+                android:id="@+id/all_pb"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="55dp"
+                android:layout_height="2dp"
+                android:layout_below="@id/all_need"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="2dp"
+                android:max="100"
+                android:progress="30"
+                android:progressDrawable="@drawable/progressbar_style" />
+
+            <TextView
+                android:id="@+id/have_products"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/all_pb"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="2dp"
+                android:text="剩余:10"
+                android:textColor="#8000"
+                android:textSize="8sp" />
+
+            <ImageView
+                android:id="@+id/save_iv"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="4dp"
+                android:clickable="true"
+                android:padding="3dp"
+                android:src="@drawable/shop_cart" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <ImageView 
+    android:layout_width="40dip"
+    android:layout_height="40dip"
+    android:visibility="gone"
+    android:id="@+id/special_price"
+    android:src="@drawable/special_ten"/>
+</RelativeLayout>

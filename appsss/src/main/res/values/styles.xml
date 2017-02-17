@@ -1,0 +1,15 @@
+<resources>
+
+    <style name="AppTheme" parent="AppBaseTheme">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="appBackground">@color/theme_bg</item>
+        <item name="appThemeColor">@color/colorPrimary</item>
+        <item name="appTitleSize">@dimen/txt_big</item>
+        <item name="appTitleColor">@color/colorAccent</item>
+        <item name="appTitleBarBg">@color/colorPrimary</item>
+        <item name="appLoadingDraw">@drawable/img_loading_circle</item>
+    </style>
+
+</resources>

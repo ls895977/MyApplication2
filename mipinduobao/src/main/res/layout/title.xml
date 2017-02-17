@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_title"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/title_background"
+    android:orientation="horizontal">
+
+    <!-- 位于左侧的图片 -->
+
+    <ImageView
+        android:id="@+id/iv_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/title_paddingTop"
+        android:paddingTop="18dp"
+        android:paddingBottom="@dimen/dp_10"
+        android:paddingRight="@dimen/dp_10"
+        android:paddingLeft="@dimen/dp_5"
+        android:visibility="gone"
+        android:src="@drawable/fanhui"
+         />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/mybaby_sign_button"
+        android:textSize="@dimen/my_baby_text_size" />
+
+    <ImageView
+        android:id="@+id/iv_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:paddingTop="18dp"
+        android:paddingLeft="@dimen/dp_10"
+        android:paddingBottom="@dimen/dp_10"
+        android:paddingRight="@dimen/dp_15"
+        android:src="@drawable/daohuag" />
+
+</RelativeLayout>

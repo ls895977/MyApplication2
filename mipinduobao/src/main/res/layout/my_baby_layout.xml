@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    
+    android:background="@color/mybaby_sign_button"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/mybabay_linerlayout_top" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/my_babay_account_number" />
+
+        <EditText
+            android:id="@+id/my_baby_layout_account_nuber"
+             android:paddingLeft="@dimen/mybabay_linerlayout_top"
+            style="?android:attr/textViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:background="@null"
+            android:singleLine="true"
+            android:textColor="@null" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/mybabay_linerlayout_top" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/my_babay_paseword" />
+
+        <EditText
+            android:paddingLeft="@dimen/mybabay_linerlayout_top"
+            android:id="@+id/my_babay_sign_paseword"
+            style="?android:attr/textViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="@string/my_babay_default"
+            android:singleLine="true"
+            android:textColor="@null" />
+    </LinearLayout>
+	 <LinearLayout
+	     android:paddingTop="@dimen/mybabay_linerlayout_top2"
+	     android:paddingLeft="@dimen/mybabay_linerlayout_top1"
+	     android:paddingRight="@dimen/mybabay_linerlayout_top1"
+	     android:orientation="horizontal"
+	     android:layout_width="match_parent"
+	     android:layout_height="wrap_content"
+	      >
+    <Button 
+        android:textColor="@color/mybaby_sign_button"
+        android:gravity="center"
+        android:id="@+id/mybaby_sign_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mybaby_sign_button"
+        android:text="@string/mybaby_sign_button_text"
+        />
+    </LinearLayout>
+    <RelativeLayout 
+        android:padding="@dimen/mybabay_linerlayout_top2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView 
+            android:layout_alignParentRight="true"
+            android:id="@+id/my_baby_find_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mybaby_sign_findpassword_text"
+            />
+        
+          <TextView 
+              android:paddingRight="@dimen/mybabay_linerlayout_top2"
+              android:layout_toLeftOf="@+id/my_baby_find_password"
+            android:id="@+id/my_baby_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mybaby_sign_register"
+            />
+    </RelativeLayout>
+      <LinearLayout 
+          android:paddingTop="@dimen/mybabay_linerlayout_top2"
+          android:gravity="center_horizontal"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          >
+          <ImageView 
+              android:layout_marginRight="@dimen/mybabay_linerlayout_top2"
+              android:id="@+id/my_baby_imagebuttonQQ"
+              android:layout_width="@dimen/my_baby_imagebuttonQQ_width"
+              android:layout_height="@dimen/my_baby_imagebuttonQQ_height"
+              android:src="@drawable/qq"
+              />
+          <ImageView 
+              android:id="@+id/my_baby_imagebuttonweixin"
+              android:layout_width="@dimen/my_baby_imagebuttonQQ_width"
+              android:layout_height="@dimen/my_baby_imagebuttonQQ_height"
+              android:src="@drawable/weixin"
+              />
+      </LinearLayout>
+</LinearLayout>
